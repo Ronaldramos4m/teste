@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contas</title>
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css\estilos.css">
+</head>
+<body>
+    <div class="container">
+
+
+      <div class="jumbotron">
+        <h1>CONTAS A PAGAR</h1>
+      </div>
+
+      <div class="row">
+        <div class="col-md-8">
+        <div class="form-group">
+          <label >Descricao da conta:</label>
+          <input type="text" class="form-control" id="dsconta" placeholder="">
+        </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label >Valor:</label>
+            <input type="number" class="form-control" id="vlconta" placeholder="">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <button type="button" class="btn btn-large btn-block btn-default" id="ins">INSERIR NA PLANILHA</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <label>Planilha :</label>
+        <table class="table" id="pla">
+        <th>Descricao</th>
+        <th id="a">Valor</th>
+        </table>
+        <button type="button" class="btn btn-large btn-block btn-default"id="fechar">FECHAR MES</button>
+      </div>
+
+      <div class="row">
+        <table>
+         <th colspan="2"></th>
+         <tr>
+           <td > Total:</td>
+           <td id="resultado"> </td>
+         </tr>
+         <tr>
+           <td > Valor Maior:</td>
+           <td id="resultad"> </td>
+         </tr>
+         <tr>
+           <td > Valor Menor:</td>
+           <td id="resulta"> </td>
+         </tr>
+         <tr>
+           <td > Valor Medio:</td>
+           <td id="result"> </td>
+         </tr>
+        </table>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+    <!-- Inserindo scripts do javascript do jquery e bootstrap -->
+    <script type="text/javascript" src="js/jquery-3.4.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js\conta.js"></script>
+
+</body>
+</html>
